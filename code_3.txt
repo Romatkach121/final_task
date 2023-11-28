@@ -1,0 +1,13 @@
+program sestra_sani_K;
+var
+    N: longint;
+    a,b,c: byte;
+begin
+    read(N);
+    c:=N mod 10;
+    N:=N div 10;
+    b:=N mod 10;
+    a:=N div 10;
+    N:=c*100+b*10+a;
+    WriteLn(N);
+end.
